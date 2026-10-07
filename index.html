@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlashMind | Memory Power Test</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand">🧠 <span>FlashMind</span></div>
+    <div class="best">🏆 Best: <b id="bestScore">0%</b></div>
+  </header>
+
+  <main>
+    <section id="home" class="screen active">
+      <div class="hero-icon">🧠</div>
+      <h1>FlashMind</h1>
+      <p class="tagline">Train your memory. Beat your brain.</p>
+      <div class="card intro">
+        <h2>⚡ Flash Memory Challenge</h2>
+        <p>Memorize the emojis, then find them from a shuffled collection.</p>
+        <div class="features">
+          <span>⏱️ Timed</span><span>🔥 Streaks</span><span>🏆 Scores</span>
+        </div>
+        <button id="startBtn">Start Challenge 🚀</button>
+      </div>
+    </section>
+
+    <section id="game" class="screen">
+      <div class="topline">
+        <span id="roundLabel">Round 1</span>
+        <span id="streakLabel">🔥 Streak: 0</span>
+        <span id="livesLabel">❤️❤️❤️</span>
+      </div>
+      <div class="card game-card">
+        <div id="phase" class="phase">MEMORIZE</div>
+        <div id="timer" class="timer">3</div>
+        <div id="memoryGrid" class="memory-grid"></div>
+        <div id="choices" class="choices hidden"></div>
+        <button id="submitBtn" class="hidden">Check Answer ✓</button>
+      </div>
+      <p id="instruction" class="instruction">Remember every emoji in order.</p>
+    </section>
+
+    <section id="result" class="screen">
+      <div class="hero-icon">🏆</div>
+      <h1 id="resultTitle">Great job!</h1>
+      <div class="score" id="score">0%</div>
+      <p id="resultMessage">Your memory result</p>
+      <div class="stats card">
+        <div><span>Correct</span><b id="correctStat">0 / 0</b></div>
+        <div><span>Accuracy</span><b id="accuracyStat">0%</b></div>
+        <div><span>Best Score</span><b id="resultBest">0%</b></div>
+      </div>
+      <button id="againBtn">Play Again 🔄</button>
+    </section>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
