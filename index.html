@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Anti-Theft Bag</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🎒</div>
+
+        <div>
+            <h1>Smart Anti-Theft Bag</h1>
+            <p>Intelligent Security & Protection System</p>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>🛡️ Smart Bag Security Dashboard</h2>
+            <p>Monitor and protect your bag in real time.</p>
+
+            <div id="securityStatus" class="status armed">
+                🟢 SYSTEM ARMED
+            </div>
+        </section>
+
+
+        <section class="dashboard">
+
+            <div class="card">
+                <div class="icon">🔐</div>
+                <h3>Security</h3>
+                <p id="securityText">Protected</p>
+
+                <button id="armBtn" onclick="toggleSecurity()">
+                    🔓 DISARM SYSTEM
+                </button>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">🔋</div>
+                <h3>Battery</h3>
+
+                <div class="battery">
+                    <div id="batteryLevel"></div>
+                </div>
+
+                <p id="batteryText">87%</p>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">📡</div>
+                <h3>Connection</h3>
+
+                <p class="online">
+                    🟢 ONLINE
+                </p>
+
+                <small>Device connected</small>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">📍</div>
+                <h3>Bag Location</h3>
+
+                <p>📍 Safe Zone</p>
+
+                <small id="locationText">
+                    Location monitored
+                </small>
+            </div>
+
+        </section>
+
+
+        <section class="danger-section">
+
+            <h2>🚨 Security Test</h2>
+
+            <p>
+                Simulate an unauthorized movement of the bag.
+            </p>
+
+            <button class="dangerBtn" onclick="simulateTheft()">
+                🚨 SIMULATE THEFT
+            </button>
+
+        </section>
+
+
+        <section id="alertBox" class="alert hidden">
+
+            <div class="alertIcon">🚨</div>
+
+            <h2>THEFT ALERT!</h2>
+
+            <p>
+                Unauthorized movement detected!
+            </p>
+
+            <p>
+                🔔 Alarm activated
+            </p>
+
+            <button onclick="stopAlarm()">
+                🔕 STOP ALARM
+            </button>
+
+        </section>
+
+
+        <section class="activity">
+
+            <h2>📊 Security Activity</h2>
+
+            <div id="activityLog">
+
+                <div class="log">
+                    🟢 System initialized
+                </div>
+
+                <div class="log">
+                    🛡️ Bag security is active
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            🎒 Smart Anti-Theft Bag System
+        </p>
+
+        <small>
+            Thinkathon Software Project • 2026
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+              </html>
